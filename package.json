@@ -1,0 +1,24 @@
+{
+  "name": "chatty",
+  "version": "1.0.0",
+  "description": "DevMountain Chat project",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaredmpeterson/chatty.git"
+  },
+  "author": "Jared M. Peterson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jaredmpeterson/chatty/issues"
+  },
+  "homepage": "https://github.com/jaredmpeterson/chatty#readme",
+  "dependencies": {
+    "body-parser": "^1.15.1",
+    "express": "^4.13.4"
+  }
+}
