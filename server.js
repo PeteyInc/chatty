@@ -2,14 +2,12 @@ var express = require('express');
 var bodyParser = require('body-parser');
 var messages = [{
   "message": "hello",
-  "time": Date()
+  "time": new Date()
 }];
 var app = express();
 var port = 9999;
 
 app.use(bodyParser.json());
-app.listen(9999);
-
 
 app.get('/', function(req, res, next) {
     res.status(200).set({
@@ -43,3 +41,5 @@ app.options('/', function(req, res, next) {
     'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept',
   }).send();
 });
+
+app.listen(port);
